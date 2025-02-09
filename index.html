@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+      
+</head>
+<body>
+    <!-- <img src="https://cdn.vectorstock.com/i/500p/61/19/back-to-school-doodle-seamless-pattern-hand-drawn-vector-45436119.jpg" alt="background img"> -->
+    <header>
+        <div class="heading">MY LIBRARY</div>
+        <input type="text" id ="search-bar" placeholder="Book Title/ Authors...">
+        <div class="settings-icon" onclick="toggleSettings()">
+            <i class="fas fa-cog"></i>
+        </div>
+
+        <div id="settings-panel" class="settings-panel">
+            <h3>Settings</h3>
+            <label class="switch">
+                <input type="checkbox" id="dark-mode-toggle">
+                <span class="slider"></span>
+            </label>
+            <span>Dark Mode</span>
+        </div>
+
+    </header>
+    <main>
+
+        <div class="inner-navBar">
+            <div class="genre-dropdown">GENRE
+                <select>
+                    <option value="all">All</option>
+                    <option value="non-fiction">Non-Fiction</option>
+                    <option value="fiction">Fiction</option>
+                    <option value="history">History</option>
+                    <option value="romance">Romance</option>
+                    <option value="sci-fi">Sci-fi</option>
+                    <option value="horror">Horror</option>
+                    <option value="comedy">Comedy</option>
+                    <option value="action">Action</option>
+                    <option value="dark-romance">Dark Romance</option>
+                </select>
+            </div>
+            <div class="buttons">
+                <button class="btn" value="to-read">TO READ</button>
+                <button class="btn" value="reading">READING</button>
+                <button class="btn" value="finished">FINISHED</button>
+            </div>
+        </div>
+
+
+        <div class="outer" value="to-read">
+            <div class="to-read">To Read</div>
+            <div class="list-to-read"></div>
+        </div>
+        <div class="outer" value="reading">
+            <div class="reading">Reading</div>
+            <div class="list-reading"></div>
+        </div>
+        <div class="outer" value="finished">
+            <div class="finished">Finished</div>
+            <div class="list-finished"></div>
+        </div>
+      
+
+    </main>
+    <footer>
+        <div class="recommendations-title">RECOMMENDATIONS</div>
+        <div class="recommendations"></div>
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
